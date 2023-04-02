@@ -2,25 +2,233 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Itim', cursive;
+    font-family: 'Roboto', sans-serif;
 }
+body{
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-position: fixed;
 
+}
 .Main-container{
-    width: 100%;
-    height: 100vh;
-    background-color: violet;
+    max-width: 100%;
     display: flex;
+    min-height: 100vh;
     flex-wrap: wrap;
 }
 
 .Left-display{
-    width: 60%;
-    height: 100vh;
-    background-color: brown;
+    min-width: 60%;
+    height: 100dvh;
+}
+
+.left-details{
+    position: absolute;
+    bottom: 0;
+    max-width: 60%;
+    min-height: 250px;
+    display: flex;
+    text-align: center;
+}
+#weather-icon{
+    position: absolute;
+    right: -100px;
+    top: 80px;
+}
+#des{
+    position: absolute;
+    bottom: 90px;
+    right: -100px;
+    font-size: 22px;
+    color: #EFEFEF;
+    text-align:center;
+    font-weight: bold;
+}
+#temperature{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 110px;
+    color: #EFEFEF;
+    padding: 10px;
+    left: 40px;
+}
+
+#location{
+    font-size: 60px;
+    color: #EFEFEF;
+    margin-top: 63px;
+}
+#time{
+    position: absolute;
+    font-size: 20px;
+    color:#EFEFEF;
+    right: 180px;
+    bottom: 90px;
+    font-weight: bold;
 
 }
 .Right-display{
-    width: 40%;
-    height: 100vh;
-    background-color: blue;
+    min-width: 40%;
+    min-height: 100vh;
+    background: rgba(41, 42, 42, 0.85);
     
+}
+#searchbar{
+    width: 400px;
+    height: 50px;
+    margin-left: 70px;
+    margin-top: 40px;
+    background: transparent;
+    font-size:25px;
+    border-style: none;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.34);
+    outline: none;
+    color: #EFEFEF;
+    transition: 0.5s ease;
+
+}
+::placeholder{
+    color: #EFEFEF;
+}
+#searchbar:focus{
+    color: #EFEFEF;
+    border-color: azure;
+    border-bottom: 3px solid;
+    width: 420px;
+}
+
+#searchbtn{
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    font-size: 40px;
+    background-color: rgb(75, 223, 252, 0.55);
+    color: #EFEFEF;
+    right: 0;
+    border: none;
+}
+#searchbtn:hover{
+    background-color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+.search-items{
+    height: 300px;
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    color: #EFEFEF;
+
+}
+
+.search-items > ul > li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.search-items > hr{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.search-items>ul>li:hover{
+    color: tomato;
+    cursor: pointer ;
+}
+.Weather-details{
+    width: 40%;
+    height: 400px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0px;
+    padding: 25px;
+    color:#EFEFEF;
+}
+#details{
+    list-style: none;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 60px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.Weather-details > hr{
+    margin-top: 10px;
+}
+ h2{
+    margin-left: 50px ;
+ }
+
+@media only screen and (max-width: 768px){
+   
+    .Main-container{
+        min-width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .Left-display{
+        min-width: 100%;
+    }
+    .left-details{
+        position: absolute;
+        bottom: 150px;
+        min-width: 100%;
+        height: 500px;
+        text-align:center;
+    }
+
+    #temperature{
+        position: absolute;
+        font-size: 80px;
+        top: 120px;
+        left: 120px;
+    }
+    #location{
+        position: absolute;
+        font-size: 40px;
+        top: 10px;
+        left: 100px;
+    }
+    .icon{
+    position: absolute;
+    top: 250px;
+    right: 200px;
+
+    }
+
+    #des{
+        top: 300px;
+        right: 170px;
+        text-align: center;
+
+    }
+    #time{
+        width: 300px;
+        top: 400px;
+        left: 150px;
+    }
+
+    .Right-display{
+        min-width: 100%;
+
+    }
+    .search-items{
+      
+    }
+    .Weather-details{
+        position: absolute;
+        width: 100%;
+        top: 1200px;
+    }
+    #searchbar{
+        width:300px ;
+    }
+
+    #searchbar:focus{
+        width:310px
+    }
 }

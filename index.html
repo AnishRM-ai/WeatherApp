@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherWebApp</title>
     <link rel="stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/cf8eaf9495.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@100&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -14,11 +18,46 @@
 
         <!-------------------------------------Left side of box----------------------------->
         <div class="Left-display">
-            
+            <div class="left-details">
+            <h1 id="temperature"> .</h1>
+            <h2 id="location"></h2> <span id="weather-icon"><img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" /></span>
+            <span id="des"></span>
+            <p id="time"></p>
+        </div>
 
         </div>
+        <!-------------------------------------Right side of box----------------------------->
         <div class="Right-display">
-<!-------------------------------------Right side of box----------------------------->
+            <input id="searchbar" type="text" placeholder="Another Locations">
+            <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="search-items">
+                <ul>
+                    <li id="london">London</li>
+                    <li id="tokyo">Tokyo</li>
+                    <li id="kathmandu">Kathmandu</li>
+                    <li id="dubai">Dubai</li>
+
+
+                </ul>
+                <hr>
+            </div>
+            
+            
+
+            <div class="Weather-details">
+                <h2>Weather Details</h2>
+                <ul id="details">
+                    <li id="cloud">Cloudy  </li>
+                    <li id="Humidit">Humidity  </li>
+                    <li id="wind">Wind Speed </li>
+                    <li id="pressure">Air Pressure </li>
+
+
+                </ul>
+               
+                <hr>
+            </div>
+          
         </div>
 
 
