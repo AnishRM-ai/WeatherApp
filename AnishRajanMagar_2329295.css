@@ -1,3 +1,5 @@
+/*Anish Rajan Magar
+ 2329295*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -36,6 +38,9 @@ body{
     position: absolute;
     right: -100px;
     top: 80px;
+}
+.icon{
+   filter: saturate(100)
 }
 #des{
     position: absolute;

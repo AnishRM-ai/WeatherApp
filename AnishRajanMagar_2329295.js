@@ -1,3 +1,5 @@
+//Anish Rajan Magar
+//2329295
 var today = new Date();
 const day = today.toLocaleString('en-us', { weekday: 'long' });
 const date = today.toLocaleString('en-us', { day: 'numeric' });
@@ -29,7 +31,7 @@ let weather = {
         document.querySelector("#cloud").innerText = "Cloudy " + all + "%";
         document.querySelector("#Humidit").innerText = "Humidity " + humidity + "%";
         document.querySelector("#wind").innerText = "Wind Speed " + speed + "km/h";
-        document.querySelector("#pressure").innerText = "Atmospheric Pressure " + pressure + " atm";
+        document.querySelector("#pressure").innerText = "Pressure " + pressure + " hPa";
         document.body.style.backgroundImage =  "url('https://source.unsplash.com/1600x900/?" + name + "')";
         
     
